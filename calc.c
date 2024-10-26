@@ -19,7 +19,11 @@ void Int_String_Modulo();
 
 
 
-int main(){
+int main(int argc, char *argv[]){
+	printf("Program Name: %s\n",argv[0]);
+	for(int i = 1; i<argc; i++){
+		printf("Arguments %d:%s\n", i, argv[i]);
+	}
 	printf("Advanced Calculator\n");
 	printf("Focus: Defensive Programming for input validation and preventing integer overflow\n");
 
